@@ -2,6 +2,8 @@
 /* eslint-disable no-console */
 import React, { useEffect } from 'react';
 import uuid from 'react-uuid';
+import { Link } from 'react-router-dom';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCountries } from '../redux/country/country';
 
@@ -21,7 +23,14 @@ const Country = () => {
     <div>
       {countriesList.map((country) => (
         <div key={uuid()}>
-          <h3>{country.name}</h3>
+          <h3>{country.name.common}</h3>
+          <Link to={`/details/${country.id}`}>
+            <button type="button">
+              <BsArrowRightCircle />
+            </button>
+          </Link>
+          <img src={country.flags.png} alt="Flag" />
+          <h4>{country.population}</h4>
         </div>
       ))}
     </div>

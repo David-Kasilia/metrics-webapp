@@ -5,7 +5,7 @@ const FETCH_COUNTRIES = 'countriesData/country/country/FETCH_COUNTRIES';
 const COUNTRY_DETAILS = 'countriesData/country/country/COUNTRY_DETAILS';
 
 // Countries Rest Api
-const api = 'https://restcountries.com/v2/all';
+const api = 'https://restcountries.com/v3.1/all';
 
 // Initial state
 const initialState = {
