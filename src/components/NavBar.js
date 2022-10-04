@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaLessThan } from 'react-icons/fa';
 
-const NavLink = () => (
+const NavBar = () => (
   <nav>
     <ul className="nav-items">
       <li className="nav-item">
-        <Link to="/"><FaLessThan /></Link>
+        <NavLink to="/"><FaLessThan /></NavLink>
       </li>
     </ul>
   </nav>
 );
 
-export default NavLink;
+export default NavBar;
