@@ -1,10 +1,11 @@
+/* eslint-disable import/extensions */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { FaMicrophone } from 'react-icons/fa';
 import { AiOutlineSetting } from 'react-icons/ai';
-import NavLink from './NavLink';
+import NavLink from './NavLink.js';
 
 const Header = ({ year }) => {
   const DetailsPageTitle = () => (
