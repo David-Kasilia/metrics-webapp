@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable react/prop-types */
@@ -8,11 +7,11 @@ import { AiOutlineSetting } from 'react-icons/ai';
 import NavLink from './NavLink';
 
 const Header = ({ year }) => {
-  const DetailsPageTitle = (props) => (
+  const DetailsPageTitle = () => (
     <h2> Country Details</h2>
   );
 
-  const HomePageTitle = (props) => (
+  const HomePageTitle = () => (
     <h2>Countries</h2>
   );
 
