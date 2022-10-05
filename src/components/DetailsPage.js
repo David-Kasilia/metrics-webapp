@@ -23,6 +23,15 @@ const DetailsPage = () => {
         <div key={country.id}>
           <h2>{country.name.common}</h2>
           <img src={country.flags.png} alt="Flag" />
+          <h3>{country.capital}</h3>
+          <h3>{country.area}</h3>
+          <h3>{country.population}</h3>
+          <h3>{country.continents}</h3>
+          <h3>{country.region}</h3>
+          <h3>{country.subregion}</h3>
+          <h3>{country.timezones}</h3>
+          <h3>{country.name.official}</h3>
+          <h3>{country.startOfWeek}</h3>
         </div>
       ))}
     </div>
