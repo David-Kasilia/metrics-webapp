@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-console */
 import React, { useEffect } from 'react';
-// import uuid from 'react-uuid';
 import { Link } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector, useDispatch } from 'react-redux';

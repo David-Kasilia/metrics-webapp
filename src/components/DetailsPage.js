@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -20,7 +19,12 @@ const DetailsPage = () => {
 
   return (
     <div>
-      Hello
+      {countryDetailsList.map((country) => (
+        <div key={country.id}>
+          <h2>{country.name.common}</h2>
+          <img src={country.flags.png} alt="Flag" />
+        </div>
+      ))}
     </div>
   );
 };
