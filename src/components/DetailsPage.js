@@ -32,6 +32,9 @@ const DetailsPage = () => {
           <h3>{country.timezones}</h3>
           <h3>{country.name.official}</h3>
           <h3>{country.startOfWeek}</h3>
+          <h3>{country.maps.googleMaps}</h3>
+          <h3>{country.borders}</h3>
+          <h3>{country.languages.ara}</h3>
         </div>
       ))}
     </div>
