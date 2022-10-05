@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-console */
 import React, { useEffect } from 'react';
-import uuid from 'react-uuid';
+// import uuid from 'react-uuid';
 import { Link } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useSelector, useDispatch } from 'react-redux';
@@ -22,9 +22,9 @@ const Country = () => {
   return (
     <div>
       {countriesList.map((country) => (
-        <div key={uuid()}>
+        <div key={country.id}>
           <h3>{country.name.common}</h3>
-          <Link to={`/details/${country.id}`}>
+          <Link to={`/details/${country.name.common}`} state={country.name.common}>
             <button type="button">
               <BsArrowRightCircle />
             </button>

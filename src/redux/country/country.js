@@ -1,8 +1,8 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 // Actions
 const FETCH_COUNTRIES = 'countriesData/country/country/FETCH_COUNTRIES';
-const COUNTRY_DETAILS = 'countriesData/country/country/COUNTRY_DETAILS';
 
 // Countries Rest Api
 const api = 'https://restcountries.com/v3.1/all';
@@ -34,11 +34,6 @@ export const fetchCountries = createAsyncThunk(
 
 );
 
-export const countryDetails = (id) => ({
-  type: COUNTRY_DETAILS,
-  payload: id,
-});
-
 const countriesReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_COUNTRIES:
@@ -47,11 +42,6 @@ const countriesReducer = (state = initialState, action) => {
         countriesList: action.payload,
       };
 
-    case COUNTRY_DETAILS:
-      return {
-        ...state,
-        countriesList: action.payload,
-      };
     default:
       return state;
   }
