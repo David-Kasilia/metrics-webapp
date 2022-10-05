@@ -16,8 +16,6 @@ const Country = () => {
     }
   }, []);
 
-  console.log(countriesList);
-
   return (
     <div>
       {countriesList.map((country) => (
