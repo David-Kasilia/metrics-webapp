@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# React capstone project - Metrics webapp: Countries Of The World Statistics
+This is a solo React Redux Capstone Project. It includes using [Rest Countries Api](https://restcountries.com/#api-endpoints-v3-name) which provides a numeric data on the population among many other data. It is about building a mobile web application to check the countries in the world data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Home Page
+![homr](https://user-images.githubusercontent.com/83514256/194418850-2bac7d86-b805-4e79-b162-602108b70102.PNG)
+
+# Detail Page
+![details](https://user-images.githubusercontent.com/83514256/194418862-7f0ae152-a3d7-4b3a-bc7b-c50b84546e03.PNG)
+s Page
+
+# Live Link to the project
+[Here is a live link to the project](https://metrics-countries-kasilia-creations.netlify.app/)
+
+# Built with
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+<li>React</li>
+<li>Redux</li>
+<li>Webpack</li>
+<li>Jest</li>
+</ul>
+
+# Prerequisites
+<ul>
+<li>VSCode</li>
+<li>Git</li>
+<li>Browser With Developer Tools</li>
+</ul>
+
+# Project Documentation
+[Here is a video to the project documentation](https://restcountries.com/#api-endpoints-v3-name)
 
 ## Available Scripts
+After cloning this directory from Github;
+You can run:
 
-In the project directory, you can run:
+### `npm install` to install project dependencies.
 
-### `npm start`
+### `npm start` to open the development server.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Project Setup
+1. Setup the project by creating a new directory.
+2. Set up the repository on GitHub and use Gitflow.
+3. Set up React using ### `npx create-react-app .`
+4. Install [React Redux](https://react-redux.js.org/) and jest-mock for tests
+5. Create routes and view components.
+6. Fetch data and update Redux store.
+7. Render fetch data for the home page.
+8. Render fetch data for the spotlight on the home page.
+9. Implemented Dynamic routing for the details page.
+10. Implemented jest test to the project.
+11. Stled the project for both desktop, tablet and mobile phones.
 
-### `npm test`
+# Run Tests
+Use `npm test a`  to run all the Jest test.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Authors  	:bookmark_tabs:
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+David Kasilia Mwanzia
+<ul>
+<li>Github <a href="https://github.com/David-Kasilia">Link To Github Profile</a></li>
+<li>Linkedin <a href="https://www.linkedin.com/in/david-kasilia-846241211/">Link To Linkedin Profile</a></li>
+<li>Twitter <a href="https://twitter.com/DavidKasilia">Link To Twitter Profile</a></li>
+</ul>
 
-### `npm run build`
+## 📝 License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is <a href="https://github.com/David-Kasilia/JavaScript-Capstone-Project/blob/develop/MIT.md">MIT</a></li> licensed.
+The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Contributing :handshake:
+Contributions, issues, and feature request are welcome anytime.
