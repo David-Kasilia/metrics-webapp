@@ -23,8 +23,13 @@ const DetailsPage = () => {
     <div className="country-details-container">
       {countryDetailsList.map((country) => (
         <div className="country-details-card" key={country.id}>
-          <h2 className="common-name">{country.name.common}</h2>
-          <img className="flag" src={country.flags.svg} alt="Flag" />
+          <div className="head-details">
+            <img className="flag" src={country.flags.svg} alt="Flag" />
+            <h2 className="common-name">{country.name.common}</h2>
+          </div>
+          <div className="population-stats">
+            <h2 className="stats-title">COUNTRY DETAILS BREAKDOWN</h2>
+          </div>
           <h2 className="official-name">
             Official Country Name:
             {country.name.official}
