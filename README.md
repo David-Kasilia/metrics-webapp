@@ -4,9 +4,9 @@ This is a solo React Redux Capstone Project. It includes using [Rest Countries A
 # Home Page
 ![homr](https://user-images.githubusercontent.com/83514256/194418850-2bac7d86-b805-4e79-b162-602108b70102.PNG)
 
-# Detail Page
+# DetailS Page
 ![details](https://user-images.githubusercontent.com/83514256/194418862-7f0ae152-a3d7-4b3a-bc7b-c50b84546e03.PNG)
-s Page
+
 
 # Live Link to the project
 [Here is a live link to the project](https://metrics-countries-kasilia-creations.netlify.app/)
