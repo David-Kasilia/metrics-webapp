@@ -70,6 +70,11 @@
     margin-top: -1.15rem;
   }
 
+  .spot-flag {
+    width: 100%;
+    height: 100%;
+  }
+
   .spot-details {
     margin-top: -0.15rem;
     margin-right: 0.95rem;
@@ -254,6 +259,11 @@
     height: 85%;
     margin-left: 1rem;
     margin-top: -1.15rem;
+  }
+
+  .spot-flag {
+    width: 100%;
+    height: 100%;
   }
 
   .spot-details {
@@ -441,6 +451,11 @@
     height: 45%;
     margin-left: 1rem;
     margin-top: -1.15rem;
+  }
+
+  .spot-flag {
+    width: 100%;
+    height: 100%;
   }
 
   .spot-details {
