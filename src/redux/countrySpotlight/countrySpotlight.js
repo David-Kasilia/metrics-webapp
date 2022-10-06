@@ -1,21 +1,22 @@
+/* eslint-disable no-console */
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 // Actions
-const FETCH_COUNTRIES = 'countriesData/country/country/FETCH_COUNTRIES';
+const COUNTRY_SPOTLIGHT = 'countriesData/country/country/COUNTRY_SPOTLIGHT';
 
 // Countries Rest Api
-const api = 'https://restcountries.com/v3.1/all';
+const spotlightApi = 'https://restcountries.com/v3.1/name/kenya';
 
 // Initial state
 const initialState = {
-  countriesList: [],
+  countrySpotlight: [],
 };
 
 // Action Creators
-export const fetchCountries = createAsyncThunk(
-  FETCH_COUNTRIES,
+export const fetchCountrySpotlight = createAsyncThunk(
+  COUNTRY_SPOTLIGHT,
   async (args, { dispatch }) => {
-    const response = await fetch(api);
+    const response = await fetch(`${spotlightApi}`);
     const data = await response.json();
     const countries = Object.keys(data).map((key) => {
       const country = data[key];
@@ -25,25 +26,23 @@ export const fetchCountries = createAsyncThunk(
       };
     });
     dispatch({
-      type: FETCH_COUNTRIES,
+      type: COUNTRY_SPOTLIGHT,
       payload: countries,
     });
     return countries;
   },
-
 );
 
-const countriesReducer = (state = initialState, action) => {
+const countrySpotlightReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_COUNTRIES:
+    case COUNTRY_SPOTLIGHT:
       return {
         ...state,
-        countriesList: action.payload,
+        countrySpotlight: action.payload,
       };
-
     default:
       return state;
   }
 };
 
-export default countriesReducer;
+export default countrySpotlightReducer;
