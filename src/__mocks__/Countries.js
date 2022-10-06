@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import fetchCountriesFromApi from './api';

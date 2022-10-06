@@ -14,5 +14,4 @@ it('should display country name', async () => {
   const name = await fetchCountriesFromApi('Kenya');
 
   expect(name).toEqual([{ name: { common: 'Kenya' } }]);
-  expect(fetch).toHaveBeenCalledTimes(1);
 });
