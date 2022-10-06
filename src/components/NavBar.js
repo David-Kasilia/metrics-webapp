@@ -1,14 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaLessThan } from 'react-icons/fa';
+import '../App.css';
+import '../index.css';
 
 const NavBar = () => (
   <nav>
-    <ul className="nav-items">
-      <li className="nav-item">
-        <NavLink to="/"><FaLessThan /></NavLink>
-      </li>
-    </ul>
+    <NavLink to="/"><FaLessThan className="homeLink" /></NavLink>
   </nav>
 );
 
