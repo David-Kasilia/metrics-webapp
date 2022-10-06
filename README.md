@@ -30,7 +30,7 @@ s Page
 </ul>
 
 # Project Documentation
-[Here is a video to the project documentation](https://restcountries.com/#api-endpoints-v3-name)
+[Here is a video to the project documentation](https://www.loom.com/share/3f56bb14e71f493f8c033836ea0daed6)
 
 ## Available Scripts
 After cloning this directory from Github;
