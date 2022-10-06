@@ -4,11 +4,7 @@ import { FaLessThan } from 'react-icons/fa';
 
 const NavBar = () => (
   <nav>
-    <ul className="nav-items">
-      <li className="nav-item">
-        <NavLink to="/"><FaLessThan /></NavLink>
-      </li>
-    </ul>
+    <NavLink className="homeLink" to="/"><FaLessThan /></NavLink>
   </nav>
 );
 

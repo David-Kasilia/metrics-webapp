@@ -15,10 +15,27 @@ const HomePage = () => {
 
   console.log(countrySpotlight);
   return (
-    <div>
+    <div className="spotlight">
       {countrySpotlight.map((country) => (
-        <div key={country.id}>
-          <h2>{country.name.common}</h2>
+        <div className="spotlight-card" key={country.id}>
+          <h2 className="spot-name">{country.name.common}</h2>
+          <img className="spot-flag" src={country.flags.svg} alt="Flag" />
+          <h2 className="spot-official-name">
+            Official Country Name:
+            {country.name.official}
+          </h2>
+          <h3 className="spot-capital">
+            Capital City:
+            {country.capital}
+          </h3>
+          <h3 className="spot-population">
+            Population:
+            {country.population}
+          </h3>
+          <h3 className="spot-area">
+            Area in Kilometers:
+            {country.area}
+          </h3>
         </div>
       ))}
       <Country />

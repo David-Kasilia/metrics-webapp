@@ -7,8 +7,8 @@ import NavBar from './NavBar';
 const Header = ({ year }) => (
   <header>
     <NavBar />
-    <h2>{year}</h2>
-    <h2>COUNTRIES</h2>
+    <h2 className="year">{year}</h2>
+    <h2 className="page-title">COUNTRIES OF THE WORLD STATISTICS</h2>
     <FaMicrophone />
     <AiOutlineSetting />
   </header>

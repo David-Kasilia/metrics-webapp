@@ -17,17 +17,20 @@ const Country = () => {
   }, []);
 
   return (
-    <div>
+    <div className="country-container">
       {countriesList.map((country) => (
-        <div key={country.id}>
-          <h3>{country.name.common}</h3>
+        <div className="country-card" key={country.id}>
+          <h3 className="country-name">{country.name.common}</h3>
           <Link to={`/details/${country.name.common}`} state={country.name.common}>
-            <button type="button">
+            <button className="detailsBtn" type="button">
               <BsArrowRightCircle />
             </button>
           </Link>
-          <img src={country.flags.png} alt="Flag" />
-          <h4>{country.population}</h4>
+          <img src={country.flags.svg} alt="Flag" className="flag-img" />
+          <h4 className="population">
+            Population :
+            {country.population}
+          </h4>
         </div>
       ))}
     </div>
