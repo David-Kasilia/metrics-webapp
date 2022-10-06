@@ -1,3 +1,131 @@
 body {
   margin: 0;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', sans-serif;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+  background-color: #ec4c8a;
+}
+
+.head-icons {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.year {
+  margin-left: -13rem;
+}
+
+.icon1 {
+  margin-top: 1.4rem;
+  font-size: 28px;
+  color: white;
+}
+
+.homeLink {
+  margin-top: 1.5rem;
+  font-size: 24px;
+}
+
+.spotlight-card {
+  width: 100%;
+  height: 20rem;
+  margin-top: 0.03rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+  background-color: #f54d8d;
+  padding-bottom: 1.5rem;
+}
+
+.spot-flag {
+  width: 40%;
+  height: 95%;
+  margin-left: 3rem;
+}
+
+.population-stats {
+  background-color: #df4682;
+  margin-top: -1.25rem;
+}
+
+.stats-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 2.5rem;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.country-container {
+  width: 100%;
+  margin-top: -1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #da467d;
+}
+
+.country-card {
+  width: 30%;
+  height: 16.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  margin-left: 1.4rem;
+  border-style: solid;
+  border-width: 0.15rem;
+  border-color: #e94a88;
+}
+
+.flag-container {
+  width: 55%;
+  height: 50%;
+  margin-left: 4.85rem;
+}
+
+.flag-img {
+  width: 100%;
+  height: 100%;
+}
+
+.country-stats {
+  width: 40%;
+  align-self: flex-end;
+  margin-left: -7.95rem;
+}
+
+.detailsLink {
+  align-self: baseline;
+  margin-left: 1.45rem;
+}
+
+.detailsBtn {
+  border: none;
+  font-size: 26px;
+  color: white;
+  background-color: transparent;
+}
+
+.country-name {
+  font-size: 1.85rem;
+  font-weight: bold;
+}
+
+.population {
+  font-size: 1.15rem;
+  font-weight: bold;
 }

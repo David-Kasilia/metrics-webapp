@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaLessThan } from 'react-icons/fa';
+import '../App.css';
+import '../index.css';
 
 const NavBar = () => (
   <nav>
-    <NavLink className="homeLink" to="/"><FaLessThan /></NavLink>
+    <NavLink to="/"><FaLessThan className="homeLink" /></NavLink>
   </nav>
 );
 

@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { fetchCountriesDetails } from '../redux/countryDetails/countryDetails';
+import '../App.css';
+import '../index.css';
 
 const DetailsPage = () => {
   const { countryDetailsList } = useSelector((state) => state.countryData);
