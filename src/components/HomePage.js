@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -15,7 +14,6 @@ const HomePage = () => {
     dispatch(fetchCountrySpotlight());
   }, []);
 
-  console.log(countrySpotlight);
   return (
     <div className="countries-container">
       {countrySpotlight.map((country) => (
